@@ -12,7 +12,7 @@ function App() {
 
     <div className="APP">
 
-      <h1> Let build the facebook clone@!</h1>
+      <h1> Let build the facebook clone</h1>
       <Header />
 
       {/* Headers */}
