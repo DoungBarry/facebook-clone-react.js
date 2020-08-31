@@ -15,7 +15,7 @@ function App() {
       {/* Headers */}
       {/* Sidebar */}
       {/* Feed */}
-      {/* widgets */}
+      {/* Widgets */}
 
 
     </div>
