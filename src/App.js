@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 
@@ -10,7 +10,7 @@ function App() {
 
 
 
-    <div className="APP">
+    <div className="app">
 
       <h1> Let build the facebook clone</h1>
       <Header />
@@ -19,7 +19,6 @@ function App() {
       {/* Sidebar */}
       {/* Feed */}
       {/* Widgets */}
-
 
     </div>
 
