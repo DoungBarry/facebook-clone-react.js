@@ -7,9 +7,17 @@ function App() {
 
     //BEM naming conveting 
 
+
+
     <div className="APP">
 
       <h1> Let build the facebook clone@!</h1>
+      {/* Headers */}
+      {/* Sidebar */}
+      {/* Feed */}
+      {/* widgets */}
+
+
     </div>
 
 
