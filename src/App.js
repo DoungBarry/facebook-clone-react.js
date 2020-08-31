@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
     <div className="APP">
 
       <h1> Let build the facebook clone@!</h1>
+      <Header />
+
       {/* Headers */}
       {/* Sidebar */}
       {/* Feed */}
