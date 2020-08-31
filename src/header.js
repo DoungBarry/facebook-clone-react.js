@@ -9,7 +9,10 @@ import HomeIcon from '@material-ui/icons/Home';
 import WidgetsIcon from '@material-ui/icons/Widgets';
 import FlagIcon from '@material-ui/icons/Flag';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import StorefrontIcon from '@material-ui/icons/Storefront';
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import { Avatar } from '@material-ui/core';
+
 function Header() {
   return (
     <div className="header">
@@ -34,9 +37,20 @@ function Header() {
         </div>
 
         <div className="header_option">
-          <WidgetsIcon fontSize="large" />
+          <SupervisedUserCircleIcon fontSize="large" />
         </div>
 
+        <div className="header_option">
+          <VideoLibraryIcon fontSize="large" />
+        </div>
+
+        <div className="header_option">
+          <StorefrontIcon fontSize="large" />
+        </div>
+
+        <div className="header_option">
+          <WidgetsIcon fontSize="large" />
+        </div>
       </div>
       <div className="header_right">
         <div className="header_info">
@@ -45,6 +59,7 @@ function Header() {
         </div>
       </div>
     </div>
+
   )
 }
 
