@@ -1,10 +1,6 @@
-.header_left > img {
-
-height:50px;
 
 
-}
-
+/*將整個區塊做一個分明的線*/
 
 .header {
 
@@ -16,5 +12,45 @@ height:50px;
   z-index: 100;
   top: 0;
   box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+
+}
+
+
+/*針對三個區塊 left . middle . right 分別做完整css 設定 */
+
+
+.header_left > img {
+
+height:50px;
+
+}
+
+
+.header_left {
+
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+
+.header_input {
+
+  display: flex;
+
+  align-items:center ;
+
+  background-color:#eff2f5;
+  
+  padding: 10;
+  margin-left: 10px;
+  border-radius: 33px;
+
+}
+
+.header_right{
+
+
+
 
 }
