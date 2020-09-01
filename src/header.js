@@ -37,9 +37,7 @@ function Header() {
 
 
 
-      <div className="header_middle">
-
-
+      <div className="header_center">
 
         <div className="header_option">
           <HomeIcon fontSize="large" />
