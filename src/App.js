@@ -3,8 +3,7 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
-// import SidebarRow from './Sidebar';
-// import SidebarRow from './SidebarRow'
+
 
 function App() {
   return (
@@ -12,14 +11,17 @@ function App() {
     //BEM naming conveting 
     <div className="app">
       <Header />
+
       <div className="app_body">
         <Sidebar />
+
         {/* Headers */}
         {/* Sidebar */}
         {/* Feed */}
         {/* Widgets */}
       </div>
     </div>
+
   );
 
   //-----------------------------------刪除 ------------------------
