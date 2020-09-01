@@ -1,11 +1,16 @@
 import React from 'react'
 import './Sidebar.css'
-function sidebar() {
+import SidebarRow from './SidebarRow'
+function Sidebar() {
   return (
     <div className="sidebar">
-
+      {/* 特殊連結 SidebarRow.js ,確認SidebarRow.js有編寫內容*/}
+      <SidebarRow title='Pages' />
+      <SidebarRow title='Friends' />
+      <SidebarRow title='marketplace' />
+      <SidebarRow title='直播' />
     </div>
   )
 }
 
-export default sidebar
+export default Sidebar
