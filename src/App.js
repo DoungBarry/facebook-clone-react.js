@@ -14,7 +14,7 @@ function App() {
 
       <div className="app_body">
         <Sidebar />
-
+        <Feed />
         {/* Headers */}
         {/* Sidebar */}
         {/* Feed */}
