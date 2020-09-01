@@ -65,6 +65,8 @@ function Header() {
 
       </div>
       <div className="header_right">
+
+
         <div className="header_info">
           <Avatar />
           <h4>Hello test </h4>
