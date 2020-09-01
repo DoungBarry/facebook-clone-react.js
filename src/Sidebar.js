@@ -15,8 +15,10 @@ function Sidebar() {
   return (
     <div className="sidebar">
       {/* 特殊連結 SidebarRow.js ,確認SidebarRow.js有編寫內容*/}
-      {/* <SidebarRow title='Pages' />*/}
-      <SidebarRow Icon={user.photoURL} title={user.displayName} />
+
+      {/* <SidebarRow Icon={user.photoURL} title={user.displayName} /> */}
+      {/* 範例暫時用直接連結圖片 */}
+      <SidebarRow src='https://media.cakeresume.com/image/upload/s--TKyX9I7p--/c_fill,g_face,h_300,w_300/v1593495134/awkwdbvwempqs1aq9pfy.jpg' title="我是東承" />
       <SidebarRow Icon={LocalHospitalIcon} title='病毒中心' />
       <SidebarRow Icon={PeopleIcon} title='Friends' />
       <SidebarRow Icon={ChatIcon} title='Friends' />

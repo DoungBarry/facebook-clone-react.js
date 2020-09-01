@@ -16,10 +16,7 @@ function SidebarRow({ src, Icon, title }) {
 
       {Icon && <Icon />}
 
-
-      <p>{title}</p>
-
-
+      <h4>{title}</h4>
     </div>
   )
 }
