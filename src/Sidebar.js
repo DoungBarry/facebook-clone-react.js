@@ -22,7 +22,7 @@ function Sidebar() {
       {/* <SidebarRow Icon={user.photoURL} title={user.displayName} /> */}
       {/* 範例暫時用直接連結圖片 */}
       <SidebarRow src='https://media.cakeresume.com/image/upload/s--TKyX9I7p--/c_fill,g_face,h_300,w_300/v1593495134/awkwdbvwempqs1aq9pfy.jpg' title="我是東承" />
-      <SidebarRow Icon={LocalHospitalIcon} title='病毒中心' />
+      <SidebarRow Icon={LocalHospitalIcon} title='病毒中心HH' />
       <SidebarRow Icon={PeopleIcon} title='Friends' />
       <SidebarRow Icon={ChatIcon} title='Friends' />
       <SidebarRow Icon={StorefrontIcon} title='Friends' />
