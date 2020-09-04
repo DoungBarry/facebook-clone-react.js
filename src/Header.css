@@ -3,7 +3,6 @@
 /*將整個區塊做一個分明的線*/
 
 .header {
-
   padding : 15px  20px ; 
   display:flex; 
   justify-content: space-between;
@@ -29,23 +28,17 @@ height:50px;
 .header_left {
 
   display: flex;
-
   justify-content: space-evenly;
 }
 
 
 .header_input {
-
   display: flex;
-
   align-items:center ;
-
   background-color:#eff2f5;
-  
   padding: 10;
   margin-left: 10px;
   border-radius: 33px;
-
 }
 
 

@@ -27,6 +27,11 @@ function StoryReal() {
         profileSrc="https://media.cakeresume.com/image/upload/s--TKyX9I7p--/c_fill,g_face,h_300,w_300/v1593495134/awkwdbvwempqs1aq9pfy.jpg"
         title="jay"
       />
+      <Story
+        imge="https://media.cakeresume.com/image/upload/s--TKyX9I7p--/c_fill,g_face,h_300,w_300/v1593495134/awkwdbvwempqs1aq9pfy.jpg"
+        profileSrc="https://media.cakeresume.com/image/upload/s--TKyX9I7p--/c_fill,g_face,h_300,w_300/v1593495134/awkwdbvwempqs1aq9pfy.jpg"
+        title="jay"
+      />
       {/* profileSrc 是故事的頭像 AVATOR */}
       {/* story */}
       {/* story */}
