@@ -8,6 +8,7 @@ function Feed() {
   return (
     <div className="feed">
       <StoryReal />
+      <MessageSender />
       {/* Feed 上面要有兩個元件製作*/}
       {/* 建立故事區 */}
       {/* 建立訊息傳送區 */}

@@ -34,9 +34,6 @@ function Header() {
       </div>
 
 
-
-
-
       <div className="header_center">
 
         <div className="header_option">
@@ -65,7 +62,6 @@ function Header() {
 
       </div>
       <div className="header_right">
-
 
         <div className="header_info">
           <Avatar />

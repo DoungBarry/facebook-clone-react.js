@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Feed from './Feed';
+import MessageSender from './MessageSender';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <div className="app_body">
         <Sidebar />
         <Feed />
+        <MessageSender />
         {/* <Feed /> */}
         {/* Headers */}
         {/* Sidebar */}
