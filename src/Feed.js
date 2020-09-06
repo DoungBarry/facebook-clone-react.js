@@ -4,6 +4,7 @@ import React from 'react'
 import "./Feed.css"
 import StoryReal from './StoryReal'
 import MessageSender from './MessageSender'
+import Post from './Post'
 
 function Feed() {
   return (
@@ -13,6 +14,11 @@ function Feed() {
       {/* Feed 上面要有兩個元件製作*/}
       {/* 建立故事區 */}
       {/* 建立訊息傳送區 */}
+
+      <Post />
+      <Post>  </Post>
+      <Post></Post>
+      {/* Post 組件 是用來傳送messageSender的內容  */}
     </div>
   )
 }
