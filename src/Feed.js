@@ -16,7 +16,7 @@ function Feed() {
       {/* 建立訊息傳送區 */}
 
       <Post />
-      <Post>  </Post>
+      <Post> </Post>
       <Post></Post>
       {/* Post 組件 是用來傳送messageSender的內容  */}
     </div>

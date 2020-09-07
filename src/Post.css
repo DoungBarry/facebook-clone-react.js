@@ -1,6 +1,15 @@
 .post_image >img{
 
-width: 50%;
+width: 100%;
+
+
+
+}
+
+
+.post_top {
+
+display: flex;
 
 
 
