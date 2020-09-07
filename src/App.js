@@ -9,10 +9,17 @@ import Widgets from './Widgets'
 
 
 function App() {
+  const user = null;
   return (
-
     //BEM naming conveting 
     <div className="app">
+      {/* 這是一個條件式： ！user?這個user不是null?*/}
+
+      {/* {!user ? (){ } */}
+
+)
+}
+
       <Header />
 
       <div className="app_body">

@@ -33,7 +33,7 @@ function Post(profilePic, image, username, timestamp, message) {
       </div>
 
       <div className="post_image">
-        <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2776&q=80" alt="" />
+        <img src="https://images.unsplash.com/photo-1477910191212-980963d84632?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=henry-co-PkusBfG84_c-unsplash.jpg&w=640" alt="" />
       </div>
 
       {/* <div className="post_image">
