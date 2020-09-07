@@ -15,8 +15,8 @@ const firebaseConfig = {
 // 前端反映到後端,,定義ＡＰＰ＝firebase的ＡＰＰ啟動器（ 置入消防氣設定 ）
 const firebaseApp = firebase.initializeApp(firebaseConfig)
 
-//數據庫訪問透過= firebaseAPP  . firebase 
-const db = firebaseApp.firebase();
+//定義 fireStore的數據庫 （ 從應用程式內的函式庫嵌入的firestore 
+const db = firebaseApp.firestore();
 const auth = firebase.auth();
 
 //New auth from google povider 

@@ -1,10 +1,24 @@
 import React from 'react'
 import "./Login.css"
 import { Button } from '@material-ui/core'
+import { auth, provider } from './firebase'
 function Login() {
 
   const signIn = () => {
     //sing in ...
+
+
+    //先在firebase.js  先定義auth //
+    //建立登入認證//
+    auth
+      //Popup 彈出視窗
+      .signInWithPopup(provider)
+      .then(result => {
+        console.log(result)
+      })
+
+      .catch((error) => { alert(error.message) })
+
   }
 
   return (

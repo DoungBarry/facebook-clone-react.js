@@ -12,10 +12,18 @@ import Login from './Login';
 function App() {
   const user = null;
   return (
+
     //BEM naming conveting 
+    //透過login 會將資料推送到 資料（data layer ) 
+    //每個組件都是一個datalayer 
+
+    // Data Layer -----------------------
+    //這邊開始是 redux 可以響應/
+    //react-content-api //
 
     //創建登入頁面： !user? 這個是一個條件問題 XXX
     //    XXX ?（ture）：（false）
+
     <div className="app">
       {!user ? (
         <Login />
