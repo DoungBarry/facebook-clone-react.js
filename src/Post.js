@@ -20,7 +20,8 @@ function Post(profilePic, image, username, timestamp, message) {
         {/* <Avatar src={profilePic} className="post_avatar"></Avatar> */}
 
         <div className="top_info">
-          <div className="username">游東承</div>
+          <p>UserNmae</p>
+
           <div className="timestamp">2020/09/05</div>
         </div>
       </div>
@@ -37,37 +38,38 @@ function Post(profilePic, image, username, timestamp, message) {
       </div>
 
 
-      <div className="post_option">
+      <div className="post_options">
+        <div className="post_option">
+          <ThumbUpIcon />
+          <p>Like</p>
 
-        {/* <NearMeIcon></NearMeIcon> */}
-        <share></share>
+        </div>
+
+        <div className="post_option">
+          <ThumbDownIcon />
+          <p>dontLike</p>
+        </div>
+
+        <div className="post_option">
+          <ChatBubbleOutlineIcon />
+          <p>Comment</p>
+        </div>
+
+        <div className="post_option">
+          <NearMeIcon />
+          <p>Share</p>
+        </div>
+
+        <div className="post_option">
+          <AccountCircleIcon />
+          <ExpandMoreIcon />
+
+        </div>
+
+        <div className="post_option">
+
+        </div>
       </div>
-      <div className="post_option">
-        <ThumbUpIcon />
-      </div>
-
-      <div className="post_option">
-        <ThumbDownIcon />
-      </div>
-
-      <div className="post_option">
-        <ChatBubbleOutlineIcon />
-      </div>
-
-      <div className="post_option">
-        <NearMeIcon />
-      </div>
-
-      <div className="post_option">
-        <AccountCircleIcon />
-      </div>
-
-      <div className="post_option">
-        <ExpandMoreIcon />
-      </div>
-
-
-
     </div>
   )
 }

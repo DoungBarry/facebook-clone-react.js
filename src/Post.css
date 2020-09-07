@@ -1,16 +1,57 @@
 .post_image >img{
-
 width: 100%;
-
-
 
 }
 
 
 .post_top {
-
 display: flex;
+margin-bottom: 15px;
+margin-top:15px;
 
+}
+
+
+.post_bottom {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
 
 
 }
+
+.post_avatar{
+margin-right:20px ;
+
+}
+
+
+.top_info{
+font-size:large;
+
+}
+
+
+.post_options {
+  justify-content: space-evenly;
+  display: flex;
+  margin: 15px;
+  border : 10 10 10 ;
+}
+
+
+.post_option {
+  color:gray;
+  display: flex;
+  margin-right: 10px;
+
+}
+
+.post_option > p{
+/* margin-left: 15px; */
+  margin:0 0 0 15px;
+
+}
+
