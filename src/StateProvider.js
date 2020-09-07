@@ -19,4 +19,6 @@ export const StateProvider = ({ reducer, initialState, children })
 
 }
 
+
+//這裡是使用者自己的資料//
 export const useStateValue = () => useContext(StateContext)
