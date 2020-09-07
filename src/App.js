@@ -5,6 +5,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Feed from './Feed';
 import Widgets from './Widgets'
+import Login from './Login';
 // import MessageSender from './MessageSender';
 
 
@@ -12,27 +13,47 @@ function App() {
   const user = null;
   return (
     //BEM naming conveting 
+
+    //創建登入頁面： !user? 這個是一個條件問題 XXX
+    //    XXX ?（ture）：（false）
     <div className="app">
-      {/* 這是一個條件式： ！user?這個user不是null?*/}
+      {!user ? (
+        <Login />
 
-      {/* {!user ? (){ } */}
+      ) : (
 
-)
-}
+          <>
+            {/* //插入將要登入後出現的頁面 // */}
+            <Header />
+            <div className="app_body">
+              <Sidebar />
+              <Feed />
+              {/* <Feed /> */}
+              {/* Headers */}
+              {/* Sidebar */}
+              <Widgets />
+            </div>
+          </>
 
-      <Header />
-
-      <div className="app_body">
-        <Sidebar />
-        <Feed />
-        {/* <Feed /> */}
-        {/* Headers */}
-        {/* Sidebar */}
-        <Widgets />
-      </div>
-    </div>
+        )
+      }
+    </div >
 
   );
+
+
+
+  // 登入後的首頁
+  // <Header />
+  //   <div className="app_body">
+  //     <Sidebar />
+  //     <Feed />
+  //     {/* <Feed /> */}
+  //     {/* Headers */}
+  //     {/* Sidebar */}
+  //     <Widgets />
+  //   </div>
+
 
   //-----------------------------------刪除 ------------------------
   // <div className="App">

@@ -20,7 +20,7 @@ function Post(profilePic, image, username, timestamp, message) {
         {/* <Avatar src={profilePic} className="post_avatar"></Avatar> */}
 
         <div className="post_topinfo">
-          <h3>UserNmae</h3>
+          <h3>{username}</h3>
           <p>2020/09/05</p>
         </div>
       </div>
