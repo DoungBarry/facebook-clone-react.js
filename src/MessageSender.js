@@ -1,21 +1,20 @@
-
 //載入react hook : useState//
-import React, { useState } from 'react'
+import React, { useState } from "react";
 //---------------------------------------------------------------------
-import { Avatar } from '@material-ui/core'
-import './MessageSender.css'
+import { Avatar } from "@material-ui/core";
+import "./MessageSender.css";
 // for  div.MessageSender_bottom （下方區域）
-import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon'
+import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
+import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
+import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 
-
+//載入外部使用者資料的武器工具
+import { useStateValue } from "./StateProvider";
 
 //------------------------------hook : useState -------------------
-//useStat 是 React hook 的 功能 ： funcation component 帶入 class component // 
+//useStat 是 React hook 的 功能 ： funcation component 帶入 class component //
 
 // const [ 變數名稱 , 變數名稱的函數 ] ＝ useState  (state 變數初始值)
-
 
 // const [imageUrl, setImageUrl] = useState("")
 
@@ -26,19 +25,18 @@ import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon'
 
 // React Native 0.59 以上的版本支援 Hooks。
 
-
 //this is funcation component So you connot ,declar const funcation outside .//
-
 
 //重要性較低的 component 中練習使用 Hook//
 
 function MessageSender() {
+  const [{ user }, dispatch] = useStateValue();
+
   const [input, setInput] = useState("");
 
   // const [ tate初始值, 可以更新state的函數值 ] = useState("這裡是初始值")
 
-  const [imageUrl, setImageUrl] = useState("")
-
+  const [imageUrl, setImageUrl] = useState("");
 
   //----------------------------------------------------------------
 
@@ -47,22 +45,23 @@ function MessageSender() {
     e.preventDefault();
 
     //刷新的時候將會帶入原始值的值 ,聰明的資料庫//
-    setInput("")
-    setImageUrl("")
+    setInput("");
+    setImageUrl("");
   };
 
   //----------------------------------------------------------------
   return (
     <div className="messageSender">
       <div className="messageSender_top">
-        <Avatar src="https://media.cakeresume.com/image/upload/s--TKyX9I7p--/c_fill,g_face,h_300,w_300/v1593495134/awkwdbvwempqs1aq9pfy.jpg" />
+        <Avatar src={user.photoURL} title={user.displayName} />
+
+        {/* <Avatar src="https://media.cakeresume.com/image/upload/s--TKyX9I7p--/c_fill,g_face,h_300,w_300/v1593495134/awkwdbvwempqs1aq9pfy.jpg" /> */}
         {/* inputMessage */}
 
-        <form >
+        <form>
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-
             //form 是React的表單處理 ：
             /*React 表單元件有一個重要的屬性 value 用來設定表單元件的值。
             
@@ -72,40 +71,45 @@ function MessageSender() {
             
             */
 
-
-
-
             // type="text"
             className="messageSender_input"
-            placeholder={"what is your mind "} />
+            placeholder={"what is your mind "}
+          />
 
           <input
             value={imageUrl}
-            // type="text" 
+            // type="text"
             onChange={(e) => setImageUrl(e.target.value)}
-            placeholder='image URL (option)' />
+            placeholder="image URL (option)"
+          />
 
-          <button onClick={handleSubmit} type="submit">Hidden submit</button>
+          <button onClick={handleSubmit} type="submit">
+            Hidden submit
+          </button>
         </form>
       </div>
       <div className="messageSender_bottom">
-        <div className="className messageSender_option" >
-          <VideoLibraryIcon style={{ color: 'red' }} />
+        <div className="className messageSender_option">
+          <VideoLibraryIcon style={{ color: "red" }} />
           <h3>Live video </h3>
         </div>
 
-        <div className="className messageSender_option" >    <PhotoLibraryIcon style={{ color: 'green ' }} />
-          <h3>green </h3></div>
+        <div className="className messageSender_option">
+          {" "}
+          <PhotoLibraryIcon style={{ color: "green " }} />
+          <h3>green </h3>
+        </div>
 
-
-        <div className="className messageSender_option" >        <InsertEmoticonIcon style={{ color: 'orange' }} />
+        <div className="className messageSender_option">
+          {" "}
+          <InsertEmoticonIcon style={{ color: "orange" }} />
           <h3>orange</h3>
         </div>
 
         {/* iconVideo */}
       </div>
     </div>
-  )
+  );
 }
 
-export default MessageSender
+export default MessageSender;
