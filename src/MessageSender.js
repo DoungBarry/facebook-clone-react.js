@@ -1,6 +1,6 @@
 //載入react hook : useState//
 import React, { useState } from "react";
-//---------------------------------------------------------------------
+//--------------------------------------------------------
 import { Avatar } from "@material-ui/core";
 import "./MessageSender.css";
 // for  div.MessageSender_bottom （下方區域）
@@ -10,6 +10,9 @@ import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 
 //載入外部使用者資料的武器工具
 import { useStateValue } from "./StateProvider";
+
+import firebase from "firebase";
+import db from "./firebase";
 
 //------------------------------hook : useState -------------------
 //useStat 是 React hook 的 功能 ： funcation component 帶入 class component //
@@ -38,18 +41,28 @@ function MessageSender() {
 
   const [imageUrl, setImageUrl] = useState("");
 
-  //----------------------------------------------------------------
+  //------------------------------------------------
 
   //刷新功能非常重要;可以測試有preventDefault的差異//
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    //插入firebase ,設定資料庫連結
+
+    db.collection("posts").add({
+      message: input,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      profilePic: user.photoURL,
+      username: user.displayName,
+      image: imageUrl,
+    });
 
     //刷新的時候將會帶入原始值的值 ,聰明的資料庫//
     setInput("");
     setImageUrl("");
   };
 
-  //----------------------------------------------------------------
+  //----------------------------------------------------
   return (
     <div className="messageSender">
       <div className="messageSender_top">
