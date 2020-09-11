@@ -24,9 +24,13 @@ function Feed() {
   useEffect(() => {
     //使用快照--備取
     db.collection("posts")
-      //讓欄位按照時間排序
+
       .orderBy("timestamp", "desc")
+
       .onSnapshot((snapshot) =>
+        //設定快照的時間作為開始
+        //snapshot.docs 將會獲得一系列文本,是從firebase那的數據庫快照後取得.
+        // doc ,,data     doc.data 都是指全部資料
         setPosts(
           snapshot.docs.map((doc) => ({
             id: doc.id,
@@ -35,9 +39,7 @@ function Feed() {
         )
       );
   }, []);
-  //設定快照的時間作為開始
-  //snapshot.docs 將會獲得一系列文本,是從firebase那的數據庫快照後取得.
-  // doc ,,data     doc.data 都是指全部資料
+
   //docs 在是全部資料   setPost的資料是透過快照數據庫.全部的資料.連結(當中doc是各別每個單一筆資料的id , 全部資料data.doc)
 
   return (
