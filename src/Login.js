@@ -7,7 +7,7 @@ import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
 
 function Login() {
-  const [{ state }, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
   //dispatch 就像一把槍可以射擊,拍攝很多動作,記錄登入使用者的過程
 
   const signIn = () => {
